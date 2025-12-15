@@ -7,6 +7,6 @@ use App\Http\Controllers\IndexController;
 
 Route::get('/', [IndexController::class, 'index']);
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+use App\Http\Controllers\ArticleController;
+
+Route::get('/articles/{id}', [ArticleController::class, 'show']);
