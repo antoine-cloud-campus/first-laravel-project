@@ -3,6 +3,6 @@
 @section('title', 'Article ' . $id)
 
 @section('content')
-    <h1>Article {{ $id }}</h1>
+    <h2>Article {{ $id }}</h2>
     <p>Article portant l’identifiant {{ $id }}</p>
 @endsection

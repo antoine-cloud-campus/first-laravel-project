@@ -1,7 +1,8 @@
+<!-- resources/views/partials/header.blade.php -->
 <header>
+    <h1>Mon site Laravel</h1>
     <nav>
-        <a href="{{ route('home') }}">Accueil</a>
-        |
-        <a href="{{ route('article.details', ['id' => 1]) }}">Article 1</a>
+        <a href="/">Accueil</a>
+        <a href="/contact">Contact</a>
     </nav>
 </header>
