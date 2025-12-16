@@ -5,11 +5,16 @@
 @section('content')
 <h2>Bienvenue sur le site de {{ $name }}</h2>
 
-@forelse ($articles as $article)
-<x-article
-    :title="$article['title']"
-    :description="$article['description']" />
-@empty
+    @forelse ($articles as $article)
+        @if ($loop->last)
+            @break
+        @endif
+
+        <x-article 
+            :title="$article['title']" 
+            :description="$article['description']"
+        />
+    @empty
 <p>Aucun article pour le moment.</p>
 @endforelse
 @endsection
