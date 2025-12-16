@@ -11,3 +11,8 @@ Route::get('/', [IndexController::class, 'index'])->name('home');
 
 // Route des articles avec le nom "article.details"
 Route::get('/articles/{id}', [ArticleController::class, 'show'])->name('article.details');
+
+// Route error
+Route::fallback(function () {
+    return view('errors.not-found');
+});
