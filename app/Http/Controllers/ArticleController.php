@@ -8,7 +8,6 @@ class ArticleController extends Controller
 {
     public function show($id)
     {
-        return "Article id = $id";
-        
+        return view('pages.article-details', ['id' => $id]);
     }
 }

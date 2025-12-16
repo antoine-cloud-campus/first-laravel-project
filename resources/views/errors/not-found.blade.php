@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>404</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title', 'Page non trouvée')
+
+@section('content')
     <h1>Page non trouvée</h1>
-</body>
-</html>
+@endsection

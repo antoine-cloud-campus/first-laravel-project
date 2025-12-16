@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8">
-    <title>{{ config('app.name', 'Laravel') }}</title>
-</head>
+@section('title', 'Accueil')
 
-<body>
+@section('content')
     <h1>Bienvenue sur le site de {{ $name }}</h1>
-    <a href="{{ route('home') }}">Accueil</a>
-    <a href="{{ route('article.details', ['id' => 5]) }}">Article 5</a>
-
-</body>
-
-
-</html>
+@endsection
