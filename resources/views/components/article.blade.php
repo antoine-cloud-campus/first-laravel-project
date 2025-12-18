@@ -9,7 +9,7 @@
 
     <p>
         {{ $truncate
-            ? \Illuminate\Support\Str::limit($description, 30, '...')
+            ? Str::limit($description, 30, '...')
             : $description
         }}
     </p>
